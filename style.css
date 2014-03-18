@@ -1,0 +1,656 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #3B3B3B;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-family:  serif;
+	font-weight: normal;
+	color: #2A8DBF;
+}
+
+lang {
+    float: right;
+    align: rigth;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+        text-align: left;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #F6B300;
+}
+
+a:hover {
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+	clear: both;
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Logo */
+
+#logo {
+	margin: 0px;
+	padding: 30px 0px;
+	color: #000000;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	margin: 0px;
+	padding: 0px;
+	text-transform: lowercase;
+	font-size: 3.8em;
+	color: #2A8DBF;
+}
+
+#logo h1 span {
+	color: #2A8DBF;
+}
+
+#logo p {
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	color: #3B3B3B;
+}
+
+#logo p a {
+	color: #3B3B3B;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #323030;
+}
+
+/* Search */
+
+#search {
+	width: 320px;
+	height: 60px;
+	padding: 0px;
+}
+
+#search form {
+	margin: 0px;
+	padding: 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 250px;
+	outline: none;
+	background: #F5F0E7;
+	border: 1px solid #D7D0C0;
+	padding: 10px;
+	border-radius: 8px;
+	text-transform: lowercase;
+	font-family: 'Open Sans', sans-serif;
+	color: #454545;
+}
+
+#search-submit {
+	width: 62px;
+	height: 22px;
+	display: none;
+	border: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu-wrapper {
+	overflow: hidden;
+	height: 56px;
+	background: #2A8DBF;
+	border-top: 1px solid #3D2729;
+}
+
+#menu {
+	width: 1000px;
+	height: 55px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	border-right: 1px solid #543E40;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	margin: 0px 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	background: #FBFFB5;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #3D2729;
+}
+
+#menu .current_page_item a {
+	background: #FBFFB5;
+	border-radius: 8px;
+}
+
+/* Page */
+
+#page {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 30px 0px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 740px;
+}
+
+.post {
+	margin-bottom: 15px;
+	padding: 30px 40px;
+	border: 1px solid #E7DFD7;
+	border-radius: 8px;
+	background: #F1EDE4;
+}
+
+.post-bgtop {
+}
+
+.post-bgbtm {
+}
+
+.post .title {
+	height: 38px;
+	margin-bottom: 10px;
+	padding: 12px 0 0 0px;
+	font-size: 32px;
+}
+
+.post .title a {
+	border: none;
+	color: #2A8DBF;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 5px 0px 15px 0px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.links {
+	display: inline-block;
+	height: 30px;
+	padding: 30px 0px 0px 0px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #1C1C1C;
+}
+
+.button
+{
+	padding: 10px 25px;
+	background: #2A8DBF;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/* Content2 */
+
+#content2 {
+	float: right;
+	width: 1000px;
+}
+
+.post {
+	margin-bottom: 15px;
+	padding: 30px 40px;
+	border: 1px solid #E7DFD7;
+	border-radius: 8px;
+	background: #F1EDE4;
+}
+
+.post-bgtop {
+}
+
+.post-bgbtm {
+}
+
+.post .title {
+	height: 38px;
+	margin-bottom: 10px;
+	padding: 12px 0 0 0px;
+	font-size: 32px;
+}
+
+.post .title a {
+	border: none;
+	color: #2A8DBF;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 5px 0px 15px 0px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.links {
+	display: inline-block;
+	height: 30px;
+	padding: 30px 0px 0px 0px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #1C1C1C;
+}
+
+.button
+{
+	padding: 10px 25px;
+	background: #2A8DBF;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 180px;
+	margin: 0px;
+	padding: 40px 30px 0px 30px;
+	color: #787878;
+	border: 1px solid #E7DFD7;
+	border-radius: 8px;
+	background: #F1EDE4;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 0px;
+	padding-bottom: 50px;
+}
+
+#sidebar li li {
+	border-bottom: 1px solid #E7DFD7;
+	margin: 0px 0px;
+	padding: 10px 0px;
+	border-left: none;
+}
+
+#sidebar li li a {
+	color: #3B3B3B;
+}
+
+#sidebar li li span {
+	display: block;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	padding-bottom: 20px;
+	font-size: 1.4em;
+	color: #2A8DBF;
+}
+
+#sidebar p {
+	margin: 0px 0px 40px 0px;
+	padding: 0px;
+	text-align: justify;
+}
+
+#sidebar a {
+        color: #2A8DBF;
+	border: none;
+}
+
+#sidebar a:hover {
+	color: #2A8DBF;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+        float: bottom;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	background: #2A8DBF;
+	font-family: 'Arvo', serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#banner {
+	width: 1000px;
+        padding-top: 2px;
+	margin: 0px auto;
+}
+
+#banner img
+{
+	border-radius: 8px;
+}
+
+		    padding-bottom:5px;
+		    text-align:center;
+}
+
+.prix_table {
+			width:685px;
+			border:1px solid #D8D8D8;
+			font-size:12px;
+			text-align:center;
+			margin:2px auto 0
+}
+
+.prix_table td{
+			text-align:center;
+}
+
+.prix_table_colonne1_w,
+.prix_table_colonne0_w,
+.prix_table_colonne2_w{
+			width:100px;
+}
+
+.prix_table_colonne3_w{
+			width:195px;
+}
+
+.prix_table_colonne4_w,
+.prix_table_colonne4_w{
+			width:185px;
+}		
+
+.prix_table th{
+			background-color:white;
+			font-weight:normal;
+			height:18px;
+			border-bottom:1px solid #D8D8D8;
+			border-right:1px solid #D8D8D8;
+}
+.prix_table td{
+			background-color:#CDF2A1;
+			height:26px;
+			border-bottom:1px solid white;
+			border-right:1px solid white;
+}
+
+.prix_table .booked td{
+			background-color:#F07F90
+}
+
+.prix_table_colonne5_o{
+			height:26px;
+			border-bottom:1px solid white;
+			background-color:#FF7F19;
+			color:white;
+			font-weight:bold;
+			font-size:20px;
+			
+}
+
+.prix_table_orange{
+font-weight:bold;
+color:#FF7F19;
+}
+
+.prix_table_barre{
+text-decoration:line-through;
+}
+
+.prix_table_big{
+font-size:16px;
+font-weight:bold;
+}
+
+.prix_table_11{
+font-size:11px;
+margin-left:55px;
+}
+
+.prix_calendrier{
+float:right;
+}
+
+.prix_calendrier_txt{
+float:left;
+height:42px;
+background:url(../Images/adsheet/calendrier2.jpg);
+}
+
+.prix_calendrier_txt a{
+display:block;
+padding-top:10px;
+}
+
+.prix_calendrier_img{
+width:48px;
+height:42px;
+background:url(../Images/adsheet/calendrier.jpg);
+float:left;
+}
+
+.prix_calendrier_img_url{
+height:42px; 
+width:48px; 
+display:block;
+text-decoration:none;
+}
+
+.prix_calendrier_img_fin{
+width:6px;
+height:42px;
+background:url(../Images/adsheet/calendrier3.jpg);
+float:left;
+}
+
+.prix_conv{
+margin-left:55px;
+}
+
+.prix_conv_txt{
+float:left;
+margin-right:5px;
+margin-top:3px;
+}
+
+.prix_conv select{
+font-size:12px;
+float:left;
+margin-right:5px;
+}
+
+.prix_bouton{
+float:left;
+}
+
+.prix_ok_g{
+float:left;
+width:7px;
+height:19px;
+background:url(../Images/adsheet/bouton_ok_g.jpg);
+}
+
+.prix_ok_d{
+float:left;
+width:6px;
+height:19px;
+background:url(../Images/adsheet/bouton_ok_d.jpg);
+}
+
+.prix_ok_m{
+float:left;
+background:url(../Images/adsheet/bouton_ok_m.jpg);
+bgcolor:#7e2517;
+height:19px;
+}
+
+.prix_ok_m a{
+color:white;
+font-weight:bold;
+text-decoration:none;
+display:block;
+margin-top:2px;
+}

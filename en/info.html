@@ -1,0 +1,437 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="location albufeira , location , albufeira , appartement , location albufeira appartement , portugal" />
+        <meta name="description" content="Location d'appartement tres bien situé dans Albufeira ,Portugal ." />
+        <meta name="author" content="Ferreira Stéphane" />
+        <meta name="generator" content="PHP/SQL " />
+        <meta name="revisit-after" content="5 days"/>
+        <meta name="Language" content="fr"/>
+        <meta name="Copyright" content="Ferreira"/>
+        <meta name="robots" content="index, follow,all" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            function initialiser() {
+                var latlng = new google.maps.LatLng(37.083800, -8.231100);
+                //objet contenant des propriétés avec des identificateurs prédéfinis dans Google Maps permettant
+                //de définir des options d'affichage de notre carte
+                
+                var options = {
+                    center: latlng,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+                 
+                //---------------------Instanciation map PArc
+                //---------------------
+                //---------------------
+                var optionsSlid = {
+                    center: latlng,
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+                var mapParc = new google.maps.Map(document.getElementById("mapParc"), optionsSlid);
+                
+                //---------------------Maison
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.084400, -8.231300), 
+                    map: mapParc,
+                    icon : "http://maps.google.com/mapfiles/arrow.png"
+                }); 
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Appartement'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(mapParc, marker);
+                });
+                
+                //---------------------  AquaShow
+                var slidez = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.0933891734588, -8.072547912597656), 
+                    map: mapParc
+                }); 
+                var infowindowsz = new google.maps.InfoWindow({
+                    content: 'AquaShow '
+                });
+                google.maps.event.addListener(slidez, 'click', function() {
+                    infowindowsz.open(mapParc, slidez);
+                });
+                //---------------------  Side
+                var slide = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.139639, -8.47445), 
+                    map: mapParc
+                }); 
+                var infowindows = new google.maps.InfoWindow({
+                    content: 'Slide & Splash '
+                });
+                google.maps.event.addListener(slide, 'click', function() {
+                    infowindows.open(mapParc, slide);
+                });
+                //---------------------  Aqua
+                var slideq = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.136646, -8.36377), 
+                    map: mapParc
+                }); 
+                var infowindowsq = new google.maps.InfoWindow({
+                    content: 'Aqualande '
+                });
+                google.maps.event.addListener(slideq, 'click', function() {
+                    infowindowsq.open(mapParc, slideq);
+                });
+                
+                //---------------------  ZOo
+                var slideqz = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.12579954064011, -8.3146333694458), 
+                    map: mapParc
+                }); 
+                var infowindowsqz = new google.maps.InfoWindow({
+                    content: 'Zoo Marine '
+                });
+                google.maps.event.addListener(slideqz, 'click', function() {
+                    infowindowsqz.open(mapParc, slideqz);
+                });
+                //---------------------Instanciation map Bar
+                //---------------------
+                //---------------------
+                var optionsba = {
+                    center: latlng,
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+                
+                var mapba = new google.maps.Map(document.getElementById("mapba"), optionsba);
+                
+                //---------------------Maison
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.084400, -8.231300), 
+                    map: mapba,
+                    icon : "http://maps.google.com/mapfiles/arrow.png"
+                }); 
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Appartement'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(mapba, marker);
+                });
+                
+                //---------------------barr2
+                var jettba2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.0886265558648, -8.252202272415161), 
+                    map: mapba,
+                    icon : "http://maps.google.com/mapfiles/ms/micons/bar.png"
+                }); 
+                var infowindowjetba2 = new google.maps.InfoWindow({
+                    content: ' Quartier des bars  '
+                });
+                google.maps.event.addListener(jettba2, 'click', function() {
+                    infowindowjetba2.open(mapba, jettba2);
+                });
+                
+                //---------------------barr
+                var jettba = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08926843552492, -8.227348923683167), 
+                    map: mapba,
+                    icon : "http://maps.google.com/mapfiles/ms/micons/bar.png"
+                }); 
+                var infowindowjetba = new google.maps.InfoWindow({
+                    content: ' Rue des bars  '
+                });
+                google.maps.event.addListener(jettba, 'click', function() {
+                    infowindowjetba.open(mapba, jettba);
+                });
+                
+                //---------------------Instanciation map Jet
+                //---------------------
+                //---------------------
+                var mapJet = new google.maps.Map(document.getElementById("mapJet"), options);
+                
+                //---------------------Maison
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.084400, -8.231300), 
+                    map: mapJet,
+                    icon : "http://maps.google.com/mapfiles/arrow.png"
+                }); 
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Appartement'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(mapJet, marker);
+                });
+                
+                //---------------------Activité
+                var jett = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08585785263673, -8.225240707397461), 
+                    map: mapJet
+                }); 
+                var infowindowjet = new google.maps.InfoWindow({
+                    content: 'Activitées nautique ( jet ski ,"flyfish" , "Jet Boat" , "UFO" , "Parasailing" , Jet Bikes & Water Scooters , "Rings" ,"Banana Boat" , "Water Ski & Wakeboard" , "Pedal Boats & Kayaks"   '
+                });
+                google.maps.event.addListener(jett, 'click', function() {
+                    infowindowjet.open(mapJet, jett);
+                });
+                
+                //---------------------Instanciation map Boite
+                //---------------------
+                //---------------------
+                var optionsb = {
+                    center: latlng,
+                    zoom: 12,
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+                var mapB = new google.maps.Map(document.getElementById("mapB"), optionsb);
+                
+                //---------------------Maison
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.084400, -8.231300), 
+                    map: mapB,
+                    icon : "http://maps.google.com/mapfiles/arrow.png"
+                }); 
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Appartement'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(mapB, marker);
+                });
+                
+                //---------------------KissClub
+                var kiss = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08690629156853, -8.231087923049927),
+                    map: mapB
+                }); 
+                var infowindowjetk = new google.maps.InfoWindow({
+                    content: ' Kiss Club '
+                });
+                google.maps.event.addListener(kiss, 'click', function() {
+                    infowindowjetk.open(mapB, kiss);
+                });
+                
+                //---------------------Kadoc
+                var kissk = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.117587, -8.151727),
+                    map: mapB
+                }); 
+                var infowindowjeta = new google.maps.InfoWindow({
+                    content: ' Kadoc '
+                });
+                google.maps.event.addListener(kissk, 'click', function() {
+                    infowindowjeta.open(mapB, kissk);
+                });
+                 
+                //---------------------Instanciation map Plage
+                //---------------------
+                //---------------------
+                var mapPlage = new google.maps.Map(document.getElementById("mapPlage"), options);
+                
+                //---------------------Plage centre
+                var plage3 = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08342713026768, -8.23124885559082), 
+                    map: mapPlage,
+                    icon: "http://maps.google.com/mapfiles/ms/micons/swimming.png"
+                }); 
+                var infoplage3 = new google.maps.InfoWindow({
+                    content: 'Plage accessible 1 min'
+                });
+                google.maps.event.addListener(plage3, 'click', function() {
+                    infoplage3.open(mapPlage, plage3);
+                });
+                
+                //---------------------Plage droite
+                var plage2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08585785263673, -8.225240707397461), 
+                    map: mapPlage,
+                    icon: "http://maps.google.com/mapfiles/ms/micons/swimming.png"
+                }); 
+                var infoplage2 = new google.maps.InfoWindow({
+                    content: 'Plage accessible en 10 min par le bord de mer'
+                });
+                google.maps.event.addListener(plage2, 'click', function() {
+                    infoplage2.open(mapPlage, plage2);
+                });
+                
+                //---------------------Plage gauche
+                var plage1 = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.08363254644081, -8.236355781555176), 
+                    map: mapPlage,
+                    icon: "http://maps.google.com/mapfiles/ms/micons/swimming.png"
+                }); 
+                var infoplage = new google.maps.InfoWindow({
+                    content: 'Plage accessible en 5 min par le bord de mer'
+                });
+                google.maps.event.addListener(plage1, 'click', function() {
+                    infoplage.open(mapPlage, plage1);
+                });
+                
+                //---------------------Maison
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(37.084400, -8.231300), 
+                    map: mapPlage,
+                    icon : "http://maps.google.com/mapfiles/arrow.png"
+                }); 
+                var infowindow = new google.maps.InfoWindow({
+                    content: 'Appartement'
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(mapPlage, marker);
+                });
+
+            }
+        </script>
+        <title>Location d'appartement sur Albufeira</title>
+        <link href="http://fonts.googleapis.com/css?family=Arvo|Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38424027-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+
+    <body onload="initialiser()">
+        <div id="menu-wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apparts.php">Les Appartements à louer</a></li>
+                    <li><a href="lieu.html">Le lieu</a></li>
+                    <li class="current_page_item"><a href="info.html">Informations pratiques</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- end #menu -->
+        </div>
+        <div id="banner">
+            <a href="http://locationalbufeira.com/index.html" class="img-style"  ><img src="images/img/fr.png"  alt="Location albufeira vue"   /></a>
+            <a href="http://locationalbufeira.com/en/index.html" class="img-style"  ><img src="images/img/gb.png"  alt="Location albufeira vue"   /></a>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <b> Réservation : rui.ferreira@neuf.fr </b>
+
+            <img src="images/banniere.jpg" width="1000" height="350" alt="Location albufeira vue" />
+        </div>
+        <div id="wrapper">
+            <!-- end #header -->
+            <div id="page">
+                <div id="page-bgtop">
+                    <div id="page-bgbtm">
+                        <div id="content">
+                            <div class="post">
+                                <h2 class="title" >Activités nautique</h2>
+                                <div style="clear: both;">&nbsp;</div>
+                                <div class="entry">
+                                    <h3 id="1"> Les plages</h3>
+                                    <div style="clear: both;">&nbsp;</div>
+                                    <p>De l'appartement 3 plages sont facilement accecible , cliquer sur la carte pour plus d'information.</p>
+                                    <div id="mapPlage" style="width:100%; height:600"></div>
+                                    <div style="clear: both;">&nbsp;</div>
+                                    <h3 id="2"> Jet ski ect..</h3>
+                                    <div style="clear: both;">&nbsp;</div>
+                                    <p>Vous trouverrez de nombreuses activités sur la plage de "Oura"  tel que du jet-ski , "la banane" , du fly-fish de ski nautique ect... <br> Pour plus d'information à ce sujet consulter leur site web : <a href=http://www.skimolhado.com target="http://www.skimolhado.com" >www.skimolhado.com</a> </p>
+                                    <div id="mapJet" style="width:100%; height:600"></div>
+                                    <div style="clear: both;">&nbsp;</div>
+                                    <h3 id="3">Parcs Aquatique</h3>
+                                    <div style="clear: both;">&nbsp;</div>
+                                    <p> Voici la liste des principaux parcs aquatique : 
+                                        <br> Slide & Splash : <a href=http://www.slidesplash.com/ target="http://www.slidesplash.com/" >http://www.slidesplash.com/</a> 
+                                            <br> Aqualand : <a href=http://www.aqualand.pt target="http://www.aqualand.pt" >http://www.aqualand.pt</a> 
+                                                <br> Zoo Marine : <a href=http://www.zoomarine.pt/index.php target="http://www.zoomarine.pt/index.php" >http://www.zoomarine.pt/index.php</a>
+                                                    <br> AquaShow :<a href=http://park.aquashowparkhotel.com target="http://park.aquashowparkhotel.com" >http://park.aquashowparkhotel.com</a>
+                                                        <br> Des navettes pour y allez son disponible (Voir navette dans le menu Divers).</p>
+
+                                                            <div id="mapParc" style="width:100%; height:600"></div>
+                                                            <div style="clear: both;">&nbsp;</div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="post">
+                                                                <h2 class="title">Activités "nocture"<a href="#"></a></h2>
+                                                                <div style="clear: both;">&nbsp;</div>
+                                                                <div class="entry">
+                                                                    <h3 id="4"> Boites de nuits</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <p>Le Kiss club (5 min a pied) : <a href=http://www.kissclubalgarve.com target="http://www.kissclubalgarve.com">http://www.kissclubalgarve.com</a></p>
+                                                                    <p>Le Kadoc (navette gratuite) : <a href=http://www.kadoc.pt/index.php target="http://www.kadoc.pt/index.php">http://www.kadoc.pt/index.php</a></p>
+                                                                    <div id="mapB" style="width:100%; height:600"></div>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="5"> Bars</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <div id="mapba" style="width:100%; height:600"></div>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="6">Restaurents</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="7">Fast Food</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post">
+                                                                <h2 class="title">Divers<a href="#"></a></h2>
+                                                                <div style="clear: both;">&nbsp;</div>
+                                                                <div class="entry">
+                                                                    <h3 id="8"> Shooping</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="9"> Navette</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="10">Course</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                    <h3 id="11">Sport</h3>
+                                                                    <div style="clear: both;">&nbsp;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="clear: both;">&nbsp;</div>
+                                                            </div>
+                                                            <!-- end #content -->
+                                                            <div id="sidebar">
+                                                                <ul>
+
+                                                                    <li>
+                                                                        <h2>Les activités alentour</h2>
+                                                                        <p>Vous pourrez trouver de nombreuses activités dans Albufeira et ces alentours.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h2>Activités nautique</h2>
+                                                                        <ul>
+                                                                            <li><a href="#1">Les plages</a></li>
+                                                                            <li><a href="#2">Jet ski ect..</a></li>
+                                                                            <li><a href="#3">Parcs Aquatique</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h2>Activités "nocture"</h2>
+                                                                        <ul>
+                                                                            <li><a href="#4">Boites de nuits</a></li>
+                                                                            <li><a href="#5">Bar</a></li>
+                                                                            <li><a href="#6">Restaurents</a></li>
+                                                                            <li><a href="#7">Fast Food</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h2>Divers</h2>
+                                                                        <ul>
+                                                                            <li><a href="#8">Shooping</a></li>
+                                                                            <li><a href="#9">Navette</a></li>
+                                                                            <li><a href="#10">Course</a></li>
+                                                                            <li><a href="#11">Sport</a></li>
+                                                                        </ul>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end #sidebar -->
+                                                            <div style="clear: both;">&nbsp;</div>
+                                                            </div>
+                                                            </div>
+                                                            </div>
+                                                            <!-- end #page -->
+                                                            </div>
+                                                            <div id="footer">
+                                                                <p>&copy; 2013 locationalbufeira.com. | Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+                                                            </div>
+                                                            <!-- end #footer -->
+                                                            </body>
+                                                            </html>
